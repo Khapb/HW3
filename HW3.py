@@ -78,3 +78,18 @@ list_A = [2, 3, 4]
 list_B = [5, 6, 7]
 new_list_1 = list(map(lambda x: x + 3, list_A))
 print(new_list_1)
+
+from functools import reduce
+sum_lst = reduce(lambda A, B: A + B, lst_to_sort)
+print(sum_lst)
+
+lst_to_sortB = list(filter(lambda x: x % 2 == 1, lst_to_sort))
+print(lst_to_sortB)
+
+b = range(-10, 10)
+b_1 = list(filter(lambda x : x<0, b))
+print(b_1)
+
+list_1 = [1, 2, 3, 5, 7, 9]
+list_2 = [2, 3, 5, 6, 7, 8]
+print(list(filter(lambda x: x in list_1, list_2)))
