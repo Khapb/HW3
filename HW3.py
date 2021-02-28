@@ -77,7 +77,7 @@ print(new_list)
 
 list_A = [2, 3, 4]
 list_B = [5, 6, 7]
-new_list_1 = list(map(lambda x: x + 3, list_A))
+new_list_1 = list(map(lambda x, y: x ** y, list_A, list_B))
 print(new_list_1)
 
 from functools import reduce
