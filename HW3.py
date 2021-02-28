@@ -7,6 +7,7 @@ print(id(int_a),id(str_b),id(set_c),id(lst_d),id(dict_e))
 lst_d.append(4)
 lst_d.append(5)
 print(lst_d)
+print(id(lst_d))
 print(type(int_a),type(str_b),type(set_c),type(lst_d),type(dict_e))
 print(isinstance(int_a, str), isinstance(str_b, str), isinstance(set_c, list), isinstance(lst_d, list), isinstance(dict_e, dict))
 
